@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <title>Stopwatch with Lap</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="watch">
+            <h1> STOPWATCH</h1>
+            <div class="outer-circle">
+                <div class="inner-circle">
+                    <div class="stopwatch">
+                        <div class="time">
+                            <span id="display">00:00:00.00</span>
+                        </div>
+                        <div class="controls">
+                            <button id="start" onclick="start()">Start</button>
+                            <button id="Stop" onclick="Stop()">Stop</button>
+                            <button id="lap" onclick="lap()">Lap</button>
+                            <button id="Reset" onclick="Reset()">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lap">
+            <h2>LAP History </h2>
+            <ul id="lapList" class="lap-list"></ul>
+        </div>
+        </div>
+    </div>
+       
+    
+
+
+
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>

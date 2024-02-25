@@ -1,0 +1,181 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url(sky2.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 15vw;  */
+    margin-top: 7vw;
+}
+
+.outer-circle
+{
+   
+    border: 2px solid black;
+    width: 27vw;
+    height: 27vw;
+    border-radius: 50%;
+
+    /* background-color: #ab87d1; */
+    box-shadow: 0 0 10px #2d0756 , 0 0 40px  #6d25bb ,0 0 80px #8560ae,0 0 100px  #bf91efd8  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: linear-gradient( -45deg, orange, rgb(174, 38, 38) ,rgb(181, 91, 106) rgb(57, 57, 150), rgb(91, 4, 68)); */
+      background-size: 400% 400%;
+      animation:  2s ease infinite ;
+      animation-name: gradient;
+      animation-iteration-count: infinite;
+      animation-direction: -45deg;
+    }
+
+    /* @keyframes color_change {
+        from { background-color: rgb(0, 0, 0); }
+        to { background-color: rgb(255, 252, 252); }
+    } */
+
+
+    .animation-bg
+    {
+      background: linear-gradient( -45deg, orange, rgb(174, 38, 38) ,rgb(181, 91, 106) rgb(57, 57, 150), rgb(8, 147, 8));
+      background-size: 400% 400%;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      animation: gradient 5s ease infinite ;
+      
+    }
+    @keyframes gradient{
+      
+      0%  { background-color:rgb(240, 154, 154); background-position: 0% 25%; }
+  25%  {background-color: #f0b85d; background-position: 50% 25%;}
+  50%  {background-color:rgb(237, 155, 195);  background-position: 75% 50%;}
+  75%  {background-color:rgb(131, 243, 245);  background-position: 100% 75%;}
+  100% {background-color:rgb(90, 236, 177);  background-position: 0% 25%;}
+    }
+
+
+
+
+
+.inner-circle
+{
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    border:4px solid #000000;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: -webkit-flex; */
+    
+}
+
+
+
+
+.lap {
+    list-style-type: none;
+    list-style: none;
+    font: 1em sans-serif;
+    font-size: 1.1vw;
+    margin-top: 5vw;
+/* margin-left: 0%; */
+align-items: center;
+background-color: #24022b;
+color: #fff;
+border-radius: 25px;
+border: 2px solid wheat;
+padding-left: 30%;
+padding-top: 0.2vw;
+padding-bottom:0.2vw;
+    /* margin-left: -45px; */
+}
+ul{
+    list-style: none;
+    justify-content: center;
+}
+
+
+
+
+/* .controls
+{
+    margin-top: 30vw;
+    width: 27vw;
+} */
+.controls button {
+    display: inline-block;
+    /* position: fixed; */
+    /* margin-top: 10vw; */
+    padding: 0.3vw 0.8vw;
+    font-size: 24px;
+    margin-top:13vw;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    outline: none;
+    color: #fff;
+    background-color: rgba(13, 98, 151, 0.737);
+    /* border-width: medium; */
+    border-radius: 15px;
+    border: 1.5px solid black;
+    box-shadow: 0 5px rgb(168, 193, 240);
+    float: inline-start;
+  }
+  
+  .controls button:hover {background-color: #510836;
+    box-shadow: 0 5px rgb(241, 151, 177);}
+  
+  .controls button:active {
+    background-color: #4a0303;
+    box-shadow: 0 3px #441c1c;
+    transform: translateY(4px);
+  }
+
+
+.time {
+    
+    font-size: 50px;
+    margin-top:15vw;
+
+    /* margin-bottom: 4vw; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.9vw;
+    color: #ffffff;
+}
+
+
+h1{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0%;
+    margin-bottom: 5vw;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    border: 1.5px solid wheat;
+    border-radius: 0 12px;
+}
